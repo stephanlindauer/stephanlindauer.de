@@ -1,0 +1,20 @@
+<img src="{assets-folder}/banner.png"/>
+        <p>
+the "collaborative digital canvas" was a project i did for university in a course taught by <a href="http://public.beuth-hochschule.de/~robertst/" target="_blank">Prof. Dr. Robert Strzebkowski</a>.
+        i had to come up with an idea, do all that boring project-planing stuff and then basically start coding.
+        </p>
+<p>
+the idea was to implement a collaboration tool that lets you draw on a canvas, chat and share your webcam stream.
+</p>
+<p>
+    i decided to code the frontend in flash, the backend in java and used the flash media server for centralized streaming.
+    in order to exchange drawing data as fast as possible, i came up with a byte-level protocol to keep the clients updated.
+</p>
+<p>
+today i would probably do a lot of things very differently, starting with the technologies i used, but in the end i did learn a lot working on that thing.
+</p>
+<p>
+the code is now on <a href="https://github.com/stephanlindauer/collaborative-digital-canvas" target="_blank">github</a>.
+</p>
+<p>here's a bit of a walk-through:</p>
+<iframe width="100%" height="480" src="//www.youtube.com/embed/eFgCVbT1FEM" frameborder="0" allowfullscreen></iframe>

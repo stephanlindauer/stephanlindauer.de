@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<post>
+	<title>
+		trigger deployment depending on git changes
+	</title>
+	<subtitle>
+		how to only trigger build steps with ant and jenkins when certain directories in your git repo have changed
+	</subtitle>
+	<date>
+		<day>
+			02
+		</day>
+		<month>
+			09
+		</month>
+		<year>
+			2013
+		</year>
+	</date>
+	<active>
+		true
+	</active>
+</post>

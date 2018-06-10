@@ -1,0 +1,47 @@
+.contact {
+
+  .column:not(:last-child) {
+		margin-right: auto;
+    
+  }
+	.column {
+	  max-width: 600px;
+	  display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+
+
+    .heading{
+      height: 50px;
+      padding: 0px;
+      margin-bottom: -25px;
+      
+      h3 {
+        background-color: inherit;
+        top: 10px;
+      } 
+    }
+    
+    .heading:after {
+      margin-left: auto;
+      margin-right: auto;
+      top: 50px;
+    }
+    
+    form {
+      *{
+        max-width: 600px;
+        display: block;
+        width: 100%;
+      }
+    }
+    
+    .map {
+      background-position: 50% 40px;
+    }
+	}   
+}   

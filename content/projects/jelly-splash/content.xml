@@ -1,0 +1,20 @@
+<img src="{assets-folder}/banner.png"/>
+<p>
+as part of an amazing team at
+<a target="_blank" href="http://www.wooga.com/">wooga</a>
+i helped implement the flash client for the facebook.com version of the game.
+</p>
+<p>
+apart from developing the actual game, i also got the chance to work on:
+<ul>
+    <li>
+        backend admin tool development with play framework and angularjs
+    </li>
+    <li>
+        setting up and maintaining the aws infrastructure
+    </li>
+</ul>
+</p>
+<p>
+the game can be played <a target="_blank" href="https://apps.facebook.com/jellysplash/">here</a>.
+</p>

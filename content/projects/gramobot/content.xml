@@ -1,0 +1,16 @@
+<img src="{assets-folder}/banner.png"/>
+<p>
+gramobot is a webapp that makes music selection on house parties more democratic.
+instead of some asshole forcing his or her shitty taste in music on everybody,
+now people can vote for whatever song they want to hear next via twitter.
+</p>
+<p>
+here's a sample tweet:
+<a href="https://twitter.com/stephanlindauer/status/569254275332882433" target="_blank">
+    twitter.com/stephanlindauer/status/569254275332882433
+</a>
+</p>
+<p>
+the code is up on github:
+<a href="https://github.com/stephanlindauer/gramobot" target="_blank">github.com/stephanlindauer/gramobot</a>
+</p>

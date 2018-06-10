@@ -1,0 +1,108 @@
+<p>
+    i recently worked on an app that helps organize the monthly bicycle protest
+    <a href="http://en.wikipedia.org/wiki/Critical_Mass_(cycling)" target="_blank">"critical mass"</a>.
+</p>
+<p>
+i released the app as an open source project by the end of october 2014 and by the beginning of november i had 369
+"current installs" and 486
+"total installs" and i was super excited about that.
+so quite a lot of people who had the app installed and usually during the protest i had around 120 devices running the
+app.
+</p>
+<img src="{assets-folder}/user-stats.png"/>
+<p>
+then by mid november i released a new version and changed the name of the app. just 5 minutes after i published
+those changes, i saw my app as "suspended" in the google developer console.
+</p>
+<img src="{assets-folder}/suspended.png"/>
+<p>
+i had no glue what the heck happened. when i checked my email i found this:
+</p>
+<script src="https://gist.github.com/stephanlindauer/edbbdbf5087c42bd11d9.js"></script>
+<p>
+and yet still no idea what they were talkig about. i tried to get in contact with their developer support and in
+the beginning they just ignored my complaint. after a couple of hours i actually managed to talk to a real person.
+</p>
+<img src="{assets-folder}/support.png"/>
+<p>
+so basically: "stop asking. we won't let you know why we took the app down."
+</p>
+<p>
+after a while it dawned on me that they might have had a problem with a button in the app that was entitled "help us
+finance the tracking server" which redirected to paypal.
+</p>
+<p>
+in order to smoothly serve the app i was running a digital oceans server that cost me 5.- USD a month. so i thought i
+could just give it a try and hope for people to pitch in with a small donation.
+up until today i have no idea if that really was their problem but it's the only thing that remotely makes sense.
+</p>
+<p>
+but was that really a violation of section 3.5 of their content policy?
+</p>
+<p>
+it states:
+</p>
+<script src="https://gist.github.com/stephanlindauer/aa28d0594d1512990317.js"></script>
+<p>so: nope. it wasn't in violation of that policy.</p>
+<p>"FEE" is (according to google) defined as:</p>
+<img src="{assets-folder}/definition-fee.png"/>
+<p>whereas "DONATION" is (according to google) defined as:</p>
+<img src="{assets-folder}/definition-donation.png"/>
+
+<p>
+so even with this donation button the app wasn't in violation with their content policy.
+</p>
+<p>
+i obviously took the button down and suggested that i upload a "fixed" version of the apk so google can stop whining and
+i can continue to develop the app as before.
+</p>
+<p>
+again they ignored my request and after a few days sent me this email:
+</p>
+<script src="https://gist.github.com/stephanlindauer/ac3b43bcc5e37d28b884.js"></script>
+<p>
+they didn't answer my question. they didn't reinstate the app. they didn't give a more detailed explanation of what the
+problem was.
+it was just an automatically generated email telling me to go fuck myself.
+</p>
+<p>
+and this is how google deals with small developers.
+i didn't develop the app to make money while going around the google play payment providers. in fact i haven't made
+a single buck with the app and never will and that's ok.
+</p>
+<p>
+at the same time apps like the uber app are not being removed despite the fact that they
+<a href="https://news.ycombinator.com/item?id=8660336" target="_blank">basically are malware</a>.
+</p>
+<p>
+this whole incident just made it very clear to me how google just doesn't care about small developers. developers
+that have built a large portion of the apps in their store are being treated like shit. yet they don't even make an
+effort to explain their problem or work out a solution with the developer. they just delete stuff.
+</p>
+<p>
+i should also mention that we have a button like this in the ios app and it has never been a problem.
+it actually pains me to say this because i really despise their company policy but apple seems to be the more reasonable
+platform operator here.
+</p>
+<p>
+so what now? i have released the app under a new name and will have to ask all my users to uninstall the old app and
+install the new one which will be also be hosted on my webserver as well as
+<a href="https://f-droid.org/" target="_blank">f-droid.org</a>.
+</p>
+<p>
+in the future i will avoid the google play store and release my applications under
+<a href="https://f-droid.org/" target="_blank">f-droid.org</a>
+or just try not to use app stores altogether and develop web apps instead.
+</p>
+<p>one thing this incident reminds me of is this:</p>
+<iframe class="youtube" width="100%" height="480" src="//www.youtube.com/embed/7eBYLTnI1po" frameborder="0"
+        allowfullscreen></iframe>
+<p>
+bravo google!
+</p>
+<p>ps. thumbnail from
+<a href="https://www.flickr.com/photos/ceonyc/" target="_blank">ceonyc</a>
+</p>
+<p>
+*update: i sent google a link to this blog post and got the same response as before.
+</p>

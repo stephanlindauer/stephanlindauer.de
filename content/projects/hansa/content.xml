@@ -1,0 +1,12 @@
+<img src="{assets-folder}/banner.png"/>
+        <p>
+        so basically the idea was: user goes onto that website, downloads mp3, records a video of him/herself dancing to it and then uploads it.
+        once its uploaded, other users can view and "luv" those videos.
+        </p>
+        <p>
+        biggest pain in the ass was converting all the different formats that come in, into all the different formats needed for showing it in all the different browsers.
+        so many edgecases and conversion tools.
+        </p>
+        <p>in the end we made it work and its awesome.</p>
+        <p>go <a href="http://hansa15seconds.co.za/" target="blank"> check it out</a>!
+        </p>

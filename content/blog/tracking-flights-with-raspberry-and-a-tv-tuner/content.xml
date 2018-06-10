@@ -1,0 +1,163 @@
+<p>
+    aircrafts are sending out chunks of data about what they are up to via ads-b once a second.
+    it turns out its really quite simple to retrieve this data with a raspberry pi and a adb-t tuner. on top of that
+    being a fun thing to play around with, you can also send your data to
+    <a href="http://www.flightradar24.com/" target="_blank">flightradar24</a>
+    to get a free premium account.
+</p>
+<p>
+<ul>
+    what you will need:
+    <li>
+        <a target="_blank"
+           href="http://www.amazon.de/s/?_encoding=UTF8&camp=1638&creative=19454&field-keywords=raspberry%20pi%20b%20uk&linkCode=ur2&rh=i%3Aaps%2Ck%3Araspberry%20pi%20b%20uk&site-redirect=de&tag=httpwwwste010-21&url=search-alias%3Daps&linkId=A3XKD6YLWIDVOGQ5">
+            raspberry pi model b uk-version
+        </a>
+    </li>
+    <li>
+        <a target="_blank"
+           href="http://www.amazon.de/s/?_encoding=UTF8&camp=1638&creative=19454&field-keywords=5v%20usb%20micro%20usb&linkCode=ur2&rh=i%3Aaps%2Ck%3A5v%20usb%20micro%20usb&site-redirect=de&tag=httpwwwste010-21&url=search-alias%3Daps&linkId=F5Q5COB4ATX36DIP">
+            usb power adapter
+        </a>
+    </li>
+    <li>
+        <a target="_blank"
+           href="http://www.amazon.de/s/?_encoding=UTF8&camp=1638&creative=19454&field-keywords=ethernet%20kabel&linkCode=ur2&site-redirect=de&sprefix=ethernet%2Caps%2C198&tag=httpwwwste010-21&url=search-alias%3Daps&linkId=ZVKCV2Z4LC7IMMJV">
+            ethernet cable
+        </a>
+    </li>
+    <li>
+        <a target="_blank"
+           href="http://www.amazon.de/s/?_encoding=UTF8&camp=1638&creative=19454&field-keywords=RTL2832%20R820T%20&linkCode=ur2&site-redirect=de&tag=httpwwwste010-21&url=search-alias%3Daps&linkId=VHZKMM2RWPKTJ3Y2">
+            dvb-t receiver
+        </a>
+    </li>
+    <li>
+        <a target="_blank"
+           href="http://www.amazon.de/s/?_encoding=UTF8&camp=1638&creative=19454&field-keywords=sd%204gb&linkCode=ur2&rh=i%3Aaps%2Ck%3Asd%204gb&site-redirect=de&tag=httpwwwste010-21&url=search-alias%3Daps&linkId=NURPEQI7W4PQ3EMH">
+            4 gb sd card
+        </a>
+    </li>
+</ul>
+</p>
+
+<p>
+get raspbian from the raspberry pi
+<a href="http://www.raspberrypi.org/downloads/">website</a>
+and extract the contained image file onto the sd card.
+</p>
+<p>
+put the sd card into your raspberry, connect the ethernet cable and the power adapter. plugin a keyboard and a hdmi
+display just for the first few steps.
+</p>
+<p>if your are not presented with the settings menu but the console, type in</p>
+<script src="https://gist.github.com/stephanlindauer/a0c878f0a6517e1380f0.js"></script>
+<p>
+make sure your change your password and enable ssh in the advanced options. then reboot the raspberry.
+</p>
+<p>
+next step is finding out what ip address the raspberry has in your local network to access it from your computer later
+on. do
+that by either checking your router or typing in:
+</p>
+<script src="https://gist.github.com/stephanlindauer/a91a636dd108df6f59e8.js"></script>
+<p>
+use an ssh client to logon to your raspberry via that ip address. the default username is "pi" and the password
+that you have previously set.
+</p>
+<p>
+make sure your system is up-to-date by running:
+</p>
+<script src="https://gist.github.com/stephanlindauer/e70047367654808802e1.js"></script>
+<p>
+this usually takes a while. go drink a cup of tea or look at
+<a href="http://cute-kittens.tumblr.com/" target="_blank">cute kittens</a>.
+when its done type in:
+</p>
+<script src="https://gist.github.com/stephanlindauer/f430df17a51146cff125.js"></script>
+<p>
+the raspberry will reboot, which also means that your have to reconnect your ssh client as soon as it's back up.
+</p>
+<p>
+before we can use the usb adb-t tuner, we first have to disable the built in drivers by adding them to the
+blacklist. run:
+</p>
+<script src="https://gist.github.com/stephanlindauer/38ce0a29efb800371462.js"></script>
+<p>and add:</p>
+<script src="https://gist.github.com/stephanlindauer/354ebfa9e67e6a53a115.js"></script>
+<p>
+now save that file and restart your raspberry.
+</p>
+<p>
+we need to install a couple of programs from git repositories, which means we need git and a couple of build tools:
+</p>
+<script src="https://gist.github.com/stephanlindauer/f4179725c2c748f75966.js"></script>
+<p>
+first we install the driver for the usb tuner:
+</p>
+<script src="https://gist.github.com/stephanlindauer/059b3c2d7b7c68fe931e.js"></script>
+<p>
+in order to make sense of what's coming in over the the 1090 MHz frquency we need a decoder called dump1090:
+</p>
+<script src="https://gist.github.com/stephanlindauer/6e3fd477dc5ea00e351a.js"></script>
+<p>
+so basically at this point your raspberry pi knows how to decode the data that comes in from the aircrafts flying around
+in your area.
+in order to start sending that data to flightradar24 we need to get a sharing key.
+</p>
+<p>
+install the flighradar24 linux software:
+</p>
+<script src="https://gist.github.com/stephanlindauer/489646d9890dfe0d55fc.js"></script>
+<p>
+start dump1090:
+</p>
+<script src="https://gist.github.com/stephanlindauer/f46de63305c7c4cabf32.js"></script>
+<p>
+now you can use another computer to have a look at what dump1090 sees by opening your browser on the ip of your
+raspberry
+on port 8080 for example "http://192.168.178.123:8080/".
+</p>
+<img src="{assets-folder}/web.png"/>
+<p>
+to get aproved by flightradar24 you need to send them valid data for a certain amount of time. make sure your raspberry
+sees at least 3 or 4 planes.
+now start dump1090 in quiet mode:
+</p>
+<script src="https://gist.github.com/stephanlindauer/60713dd2eb0354bbf579.js"></script>
+<p>
+go for the flightradar24 signup:
+</p>
+<script src="https://gist.github.com/stephanlindauer/84f396326311603207a0.js"></script>
+<p>
+just follow the instructions. if registration fails due to insufficent amount of data, try again until it works.
+</p>
+<p>so everything should be up and running now. only thing that is a bit annoying at this point is that you have to start
+the software manually everytime you reboot.
+in order to fix this go into your home directory and type:
+</p>
+<script src="https://gist.github.com/stephanlindauer/0803e4a374ed7f372798.js"></script>
+<p>and paste this into that code file:</p>
+<script src="https://gist.github.com/stephanlindauer/16224b39e4987187a2bc.js"></script>
+<p>
+you can now run that script when the raspberry boots as well as on certain intervals. open the cronjob editor with:
+</p>
+<script src="https://gist.github.com/stephanlindauer/c963380a388ee44b760b.js"></script>
+<p>
+and paste this stuff in
+</p>
+<script src="https://gist.github.com/stephanlindauer/69f6cdd015d669acf558.js"></script>
+<p>
+now the software automatically starts and restarts after 24 hours.
+</p>
+<p>
+it's done. go login to flightradar24.com and go onto you account page. there should be a link to the feed. when you
+click on it you'll get all kinds of stats about how your tracker is doing.
+</p>
+<img src="{assets-folder}/stats.png"/>
+<p>
+it felt a bit to easy to get this working. after some googling around it turned out there are other
+people who think it
+might be a good idea to get this system a little safer before buying the next full-body scanner.
+</p>
+<iframe class="youtube" width="100%" height="480" src="//www.youtube.com/embed/CXv1j3GbgLk" frameborder="0" allowfullscreen></iframe>

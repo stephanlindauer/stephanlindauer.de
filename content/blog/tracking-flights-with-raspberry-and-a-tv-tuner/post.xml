@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<post>
+	<title>
+		tracking flights with a raspberry pi and a tv tuner
+	</title>
+	<subtitle>
+        aircrafts are sending out chunks of data about what they are up to via ads-b once a second. it turns out its really quite simple to retrieve this data with a raspberry pi and a adb-t tuner.
+    </subtitle>
+	<date>
+		<day>
+			16
+		</day>
+		<month>
+			09
+		</month>
+		<year>
+			2014
+		</year>
+	</date>
+	<active>
+		true
+	</active>
+</post>

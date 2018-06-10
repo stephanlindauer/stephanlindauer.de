@@ -1,0 +1,70 @@
+.blog {
+
+  color: white;
+
+  .post-preview:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .post-preview {
+
+    background-color: $dark-grey;
+    padding: 10px;
+    position: relative;
+
+    img {
+      height: 90px;
+      width: 120px;
+    }
+
+    h3 {
+      position: absolute;
+      left: 140px;
+      background-color: $blue;
+      display: inline-block;
+      padding: 5px;
+      top: 10px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .sample-text {
+      position: absolute;
+      left: 150px;
+      top: 40px;
+      height: 37px;
+      overflow: hidden;
+      padding-right: 20px;
+    }
+
+    .date {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 5px;
+      color: $light-grey;
+    }
+
+    .comments {
+      position: absolute;
+      left: 140px;
+      bottom: 10px;
+      padding: 5px;
+      color: $light-grey;
+    }
+
+    .continue-reading {
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      display: inline-block;
+      padding: 5px;
+      background-color: $blue;
+    }
+  }
+
+}

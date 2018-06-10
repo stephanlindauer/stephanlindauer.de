@@ -1,0 +1,53 @@
+.work-item {
+
+  color: white; 
+
+  .item{
+    background-color: $dark-grey;
+    padding: 10px;
+
+    a{
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .postbody{
+
+      img {
+        width:100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+      .gist-meta {
+        display:none;
+      }
+      li {
+        margin-left: 20px;
+        list-style-type:square;
+      }
+    }  
+      
+    h3{
+      left: 140px;
+      background-color: $blue;
+      display: inline-block;
+      padding: 5px;
+      top: 10px;
+      margin-bottom: 10px;
+      @include font;
+      color: white;
+      text-decoration: none;
+      font-size:20px;
+      margin-bottom: 0px;
+    }
+
+  }
+  
+  #disqus_thread {
+  }
+
+}

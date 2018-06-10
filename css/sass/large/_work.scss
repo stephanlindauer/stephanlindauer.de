@@ -1,0 +1,58 @@
+.work {
+
+  h2 {
+    @include font;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: $dark-grey;
+    padding: 10px;
+    color: white;
+    text-align: right;
+  }
+
+  .work-preview-container {
+
+    .work-preview:not(:nth-child(3n+3)) {
+      margin-right: 20px;
+    }
+
+    .work-preview:nth-child(n+4) {
+      margin-top: 20px;
+    }
+  }
+
+  .work-preview {
+    background-color: $dark-grey;
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 210px;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+
+    h3 {
+      padding-top: 10px;
+    }
+
+    img {
+      border: solid 2px $dark-grey;
+      height: 120px;
+      width: 208px;
+      @include grayscale();
+    }
+
+  }
+  .work-preview:hover {
+
+    @include box-shadow(rgba($dark-grey, 0.75) 4px 4px 0px);
+
+    background-color: $blue;
+    img {
+      @include ungrayscale();
+    }
+  }
+
+}

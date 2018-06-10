@@ -1,0 +1,9 @@
+.content {
+    @include  box-style();    
+  @include font-small;
+  margin-top: 20px;
+  float: right;
+  width: 730px;
+  padding: 20px;
+  min-height: 200px;
+}

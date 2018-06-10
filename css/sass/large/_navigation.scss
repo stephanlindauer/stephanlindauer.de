@@ -1,0 +1,46 @@
+nav {
+  width: 180px;
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+
+
+  ul {
+    padding: 0px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  li a {
+    color: white;
+    @include font;  
+    font-size: 24px;  
+    text-decoration: none;
+    display: block;
+    background: url("/img/nav-arrow.png") no-repeat scroll 110px 18px $blue;
+    height: 45px;
+    width: 150px;
+    line-height: 46px;
+    margin-bottom: 3px;
+    padding-left: 20px;
+    transition: background-color 0.5s, box-shadow 1s, width 1s, margin-bottom 1s, background-position 0.1s;
+    -moz-transition: background-color 0.5s, box-shadow 1s, width 1s, margin-bottom 1s, background-position 0.1s; /* Firefox 4 */
+    -webkit-transition: background-color 0.5s, box-shadow 1s, width 1s, margin-bottom 1s, background-position 0.1s; /* Safari and Chrome */
+    -o-transition: background-color 0.5s, box-shadow 1s, width 1s, margin-bottom 1s, background-position 0.1s; /* Opera */
+  }
+  
+  li a.active {
+    width: 180px;
+    height: 48px;
+    margin-bottom: 8px;
+    @include  box-style();
+    background-position: 200px 18px;
+  }
+  
+  li a:hover {
+    background-position: 130px 18px;
+  }
+}

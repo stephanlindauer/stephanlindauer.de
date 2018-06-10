@@ -1,0 +1,25 @@
+html
+{
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body {
+   background: inline-image('bg.png');
+   background-attachment: fixed;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.skiplink{
+  display: none;
+}
+
+
+
+
+
+

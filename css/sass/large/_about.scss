@@ -1,0 +1,70 @@
+@import "compass/css3";
+
+.about {
+  color: white;
+
+  .box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .box {
+    background-color: $dark-grey;
+    padding: 10px;
+
+  }
+
+  img {
+    float: right;
+    height: 160px;
+    width: 121px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    @include box-shadow(rgba(#2779a7, 0.75) 5px 5px 0px);
+  }
+
+  h3 {
+    @include font;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  h4 {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  .textbox {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 16px;
+  }
+
+  .megustas {
+
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    li {
+
+      display: inline-block;
+      margin-top: 20px;
+
+      a {
+        padding: 5px;
+        background-color: $blue;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: white;
+        color: $blue;
+      }
+    }
+  }
+
+}

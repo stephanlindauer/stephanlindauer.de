@@ -1,0 +1,29 @@
+<p>
+	so lets say you have a really time-consuming build step in your build configuration.
+	in my case we had a deployment step that zipped a couple of files and sent them off to another server where even more magic happened.
+</p>
+<p>
+	always waiting for ages until each build has finished was getting really annoying. we decided to speed that process up a bit.
+	after it is really only neccessary to trigger that step when files in a specific folder have changed, we came up with this idea:
+</p>
+<p>
+	first we set up a boolean variable thats supposed to hold the information if the folder has changed.
+	go to your build job in jenkins and add this line to "Inject environment variables"
+</p>
+<script src="https://gist.github.com/stephanlindauer/5979729.js"></script>
+<p>
+	then add this line where it says "Execute Shell"
+</p>
+<script src="https://gist.github.com/stephanlindauer/5979720.js"></script>
+<p>
+	<ul>
+		what this line does:
+		<li>gets output of git diff between HEAD and the commit prior to HEAD</li>
+		<li>checks if the output contains the string "configuration/"</li>
+		<li>if it does it sets FOLDER_CONTENT_HAS_CHANGED to true</li>
+	</ul>
+</p>
+<p>
+	so now you should be all set to use that boolean for your build script conditionals like so:
+</p>
+<script src="https://gist.github.com/stephanlindauer/5979676.js"></script>

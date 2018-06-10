@@ -1,0 +1,10 @@
+<img src="{assets-folder}/banner.png"/>
+<p>
+    when i first started working at <a target="_blank" href="http://www.wooga.com/">wooga</a>, the main tasks i was involved with were:
+    <ul>
+        <li>maintaining the legacy gameplay code</li>
+        <li>working on the new gameplay code for better maintainability and performance</li>
+        <li>gameplay balancing concept and integration</li>
+        <li>implemetation of several game design and analysis tools</li>
+    </ul>
+</p>

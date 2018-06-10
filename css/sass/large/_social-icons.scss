@@ -1,0 +1,119 @@
+.social-icons {
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  top: 0px;
+  height: 20px;
+}
+
+.social-icons a {
+  margin-left: 5px;
+  float: left;
+  height: 20px;
+  width: 20px;
+  background-image: url("/img/social-icons.png");
+  background-repeat: no-repeat;
+}
+
+.social-icons a[title="twitter"] {
+  background-position: 0px 0px;
+}
+.social-icons a[title="twitter"]:hover {
+  background-position: 0px -20px;
+}
+
+.social-icons a[title="email"] {
+  background-position: -20px 0px;
+}
+
+.social-icons a[title="email"]:hover {
+  background-position: -20px -20px;
+}
+
+.social-icons a[title="github"] {
+  background-position: -40px 0px;
+}
+
+.social-icons a[title="github"]:hover {
+  background-position: -40px -20px;
+}
+
+.social-icons a[title="coderwall"] {
+  background-position: -60px 0px;
+}
+
+.social-icons a[title="coderwall"]:hover {
+  background-position: -60px -20px;
+}
+
+.social-icons a[title="stackoverflow"] {
+  background-position: -80px 0px;
+}
+
+.social-icons a[title="stackoverflow"]:hover {
+  background-position: -80px -20px;
+}
+
+.social-icons a[title="linkedin"] {
+  background-position: -100px 0px;
+}
+
+.social-icons a[title="linkedin"]:hover {
+  background-position: -100px -20px;
+}
+
+.social-icons a[title="slideshare"] {
+  background-position: -120px 0px;
+}
+
+.social-icons a[title="slideshare"]:hover {
+  background-position: -120px -20px;
+}
+
+.social-icons a[title="facebook"] {
+  background-position: -140px 0px;
+}
+
+.social-icons a[title="facebook"]:hover {
+  background-position: -140px -20px;
+}
+
+.social-icons a[title="steam"] {
+  background-position: -160px 0px;
+}
+
+.social-icons a[title="steam"]:hover {
+  background-position: -160px -20px;
+}
+
+.social-icons a[title="keybase"] {
+  background-position: -180px 0px;
+}
+
+.social-icons a[title="keybase"]:hover {
+  background-position: -180px -20px;
+}
+
+.social-icons a[title="xing"] {
+  background-position: -200px 0px;
+}
+
+.social-icons a[title="xing"]:hover {
+  background-position: -200px -20px;
+}
+
+.social-icons a[title="flickr"] {
+  background-position: -220px 0px;
+}
+
+.social-icons a[title="flickr"]:hover {
+  background-position: -220px -20px;
+}
+
+.social-icons a[title="youtube"] {
+  background-position: -240px 0px;
+}
+
+.social-icons a[title="youtube"]:hover {
+  background-position: -240px -20px;
+}

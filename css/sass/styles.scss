@@ -1,0 +1,41 @@
+@import "compass/reset";
+
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+@import "large/_common";
+@import "large/_header";
+@import "large/_social-icons";
+@import "large/_navigation";
+@import "large/_content";
+@import "large/_footer";
+@import "large/_disclaimer";
+@import "large/hireme";
+
+//sections
+@import "large/_blog";
+@import "large/_blogpost";
+@import "large/_about";
+@import "large/_contact";
+@import "large/_work";
+@import "large/_workitem";
+
+//sections - misc
+@import "large/_error";
+@import "large/_loading";
+
+@media (max-width: 999px) {
+    @import "small/_common";
+    @import "small/_header";
+    @import "small/_navigation";
+    @import "small/_content";
+    @import "small/_work";
+    @import "small/_footer";
+    @import "small/_contact";
+    @import "small/_disclaimer"; 
+}
+
+@media print {
+    @import "print";
+}

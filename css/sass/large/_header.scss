@@ -1,0 +1,49 @@
+header {
+  margin-top: 20px;
+  width: 920px;
+  height: 76px;
+  padding: 20px;
+  @include  box-style();
+}
+
+.header {
+  height: 72px;
+  position: relative;
+  background: -moz-linear-gradient(-45deg,  $blue 0%, $blue 56%, #333333 56%, #333333 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$blue), color-stop(56%,$blue), color-stop(56%,#333333), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  $blue 0%,$blue 56%,#333333 56%,#333333 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  $blue 0%,$blue 56%,#333333 56%,#333333 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  $blue 0%,$blue 56%,#333333 56%,#333333 100%); /* IE10+ */
+  background: linear-gradient(135deg,  $blue 0%,$blue 56%,#333333 56%,#333333 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2779a7', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #2779a7;
+  @include box-shadow(white 0px 4px 0px);
+  
+  .logo {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+    width: 100px;
+    height: 99px;
+  }
+  .logo:hover {
+   transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg); 
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+  
+  
+  h1 {
+    top: 15px;
+    left: 125px;
+    font-size: 48px;
+    position: absolute;  
+    color: white;
+    @include font;
+  }
+  
+  h2 {
+    display: none;
+  }
+  
+}

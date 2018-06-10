@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  @include no-shadow(); 
+  margin-top: 10px;
+  
+  .header{
+    background: $blue;
+    @include no-shadow(); 
+     
+     .social-icons{
+       display: none;
+     }
+     
+     h1 {
+        width: 60%;
+        text-align: center;
+        height: 55px;
+        line-height: 55px;
+        overflow: hidden;
+     }
+  }
+  
+  
+}
+

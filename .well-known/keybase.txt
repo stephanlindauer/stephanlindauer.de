@@ -1,0 +1,78 @@
+==================================================================
+https://keybase.io/stephanlindauer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://stephanlindauer.de
+  * I am stephanlindauer (https://keybase.io/stephanlindauer) on keybase.
+  * I have a public key with fingerprint A9D1 C056 E131 A83B 9C7C  C512 33A5 8FF
+E 2355 2AB1
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "a9d1c056e131a83b9c7cc51233a58ffe23552ab1",
+            "host": "keybase.io",
+            "key_id": "33A58FFE23552AB1",
+            "uid": "a4e14c831a582d46a2dee3c2c6a16e00",
+            "username": "stephanlindauer"
+        },
+        "merkle_root": {
+            "ctime": 1415716307,
+            "hash": "a212e8f0c4d4cf871b2218aa1a3aaa49487535d9df40242580fecb84362
+3344ce02f41f94791807bd54fa9a42f2d37fb596914811985efd293ad5028e635040d",
+            "seqno": 94600
+        },
+        "service": {
+            "hostname": "stephanlindauer.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1415718193,
+    "expire_in": 157680000,
+    "prev": "088af921330d788e9688d0593558d4f3dbe4b04171bc9e3b5574cafc04009901",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (MingW32)
+
+owFtUn9oVVUcf29riUvDfyLMJL1hA3m8zs97z5n0x0ZzG0ZFKmQOHueec+57t73d
++3bv3ZtrjBcJlYFlLV0/KFsUma4sCVYkIaKVJGER6B8l0mDZiGAIFS6yc8aihM4/
+59fn8/l+P9/vd9/K5lxTHr/93F93bt/4Yf6rn/3cNn9D+6jjx2rEMbushjrK7CkS
+A9ppd/r1iC9SXQzjdVGsdPHRdN0SpuDUdZKGcWRQoOgVkTNWsHBLDsKorJNaElot
+R3AFJaCuhhgKhn0uPSkpRBgLyoJAI0wpEj40kpU4za6L6ixqlkJlXjHuoGzz5q5F
+fEenxQ8tfgiiIZHMqFOGFHEFUlpjiaQroKsBsMBUJ0uW0kzXKiKqhpESQzqxaQ/o
+pL+qS0kcL3qXWWiRkEDqQRcDzyQm0oqNhCDSLACSKCID5kEfIciEgAILIQgnzKOY
+Kq4CAhBBlIFAS58R7Bq3hEgNUEBgwInHIQOerygJBBcEBUhhL/ApdzkkDELOqA4U
+4lgoChDTLqaAAGWcpHowip12TlwAxuw1qYdS27Rt8f7fY1Fpw6wlcRbLuGr+K1lW
+S9udsU8LTjZSs4xh7ZeWtEq+oZkO/rfF0IS6riwMclxw9K5amOhSaBHUcxkwywbS
+dTsVjImAI4gxUB5jmruMKUC5aR9TJMDK18QHBJoqSq6xT6lHpAikMQo4B/BfsxCZ
+PEXZGgvLkciGEu2M7cnffkMu35S7saXJDnGudfmqfyZ7xYPLrlUbzT0Hnvpg5nVZ
+3CrfXzs60ejb0/30/Y90lk/fdmBODK/tPHXTmw9fPD6/et+rLbRxKfz4p18vD/wy
+0tc6d3J3duTcrW0rfx/+vum7Iycfmipfat56bKb3sW3O3rbe+fu+WTZ64b3SH9H5
+l6a++PHgu2vuGh7/8tDZ+htnPjt1eXDTzh3dH23YFN7SmLy7sPedNRda9vc/+ey1
+2fXb88+/8NqKyZdLh3ZNd++fWJjqDZ44JnrmVj/eN/116cSfbObKb9PV0w9cmetq
+213p23L4FZG7t+foi5/fPN5fX7Xx4MK3E/Ct3NVZ1rxwcWH90bO9n9xzvKsWeSca
+WyavnumqLB8cn915Lps/X33mjo7WH/4G
+=uf0P
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stephanlindauer
+
+==================================================================

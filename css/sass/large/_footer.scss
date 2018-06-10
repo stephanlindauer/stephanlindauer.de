@@ -1,0 +1,62 @@
+footer {
+  
+  @include box-style();  
+  @include font-small;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+  width: 770px;
+  
+  a {
+    text-decoration: none;
+    color: #7d7d7d;
+    font-style: italic;
+  } 
+  
+  a:hover {
+    font-style: normal;
+  }
+  
+  .bonnes-adresses{
+    ul{
+     margin-left:20px; 
+    }
+
+    li {
+      list-style-type:circle;
+    }
+  }
+  
+  .footer-box:not(:last-child) {
+    border-right: 2px solid #4F4F4F;
+  }
+  
+  .footer-box {
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    width: 215px;
+    float:left;
+    height: 110px;
+    
+     .footer-heading{
+       color: #7d7d7d;
+       font-size:17px;
+       @include font;
+     }
+
+     .footer-content{
+       color: #7d7d7d;
+        margin-top:10px;
+
+        li{
+          margin-bottom: 5px;
+        }
+
+     }
+    
+  }
+
+
+}

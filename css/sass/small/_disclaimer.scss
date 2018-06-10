@@ -1,0 +1,18 @@
+.disclaimer {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  @include no-shadow(); 
+  margin-bottom: 10px;
+  
+  h4{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+  p{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

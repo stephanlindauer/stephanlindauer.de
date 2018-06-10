@@ -1,0 +1,4 @@
+<img src="{assets-folder}/banner.png"/>
+<p>just a stupid little jquery plugin that makes sure images are only loaded when they are really actually needed.
+ </p>
+<p>       check it out on <a href="https://github.com/stephanlindauer/lazyImages" target="_blank">github</a>.</p>

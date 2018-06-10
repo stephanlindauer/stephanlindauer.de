@@ -1,0 +1,24 @@
+.work{
+   text-align: center;
+
+  .work-preview:nth-child(n){
+    float: none;
+    margin: 0px 5px 10px 5px;
+  }
+
+  .work-preview:hover{
+    @include no-shadow();
+  }
+
+  .work-preview-container {
+
+    .work-preview:not(:nth-child(3n+3)) {
+      margin-right: 5px;
+    }
+
+    .work-preview:nth-child(n+4) {
+      margin: 0px 5px 10px 5px;;
+    }
+  }
+
+}
