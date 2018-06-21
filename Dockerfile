@@ -1,12 +1,11 @@
-FROM php:7.0-apache
+FROM php:7.2.6-apache as builder
 
-RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 RUN apt-get update -y && \
     apt-get install -y build-essential \
                        nodejs \
                        ruby-full \
                        gnupg
-                       
+
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install -y npm
 
@@ -21,3 +20,9 @@ WORKDIR /var/www/html/
 RUN npm install
 
 RUN grunt
+
+FROM php:7.2.6-apache
+
+RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
+
+COPY --from=builder /var/www/html/ /var/www/html/
